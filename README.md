@@ -1,12 +1,12 @@
 # Crazyballoon
 Crazyflie modification to airship using balloon. Mainly Instructions on Installation &amp; Usage.
 
-# Mechanics and Electronics
+# Mechanics and Electronics #
 
 Design files for both ECAD &amp; MCAD can be found on this <a href="https://github.com/tau-adl/crazybal-design-files"> repository </a>.
 Assembly and more can be found in the final project paper in this repo
 
-# Crazyfile Firmware
+# Crazyfile Firmware #
 
 In order to fly the airship, a modified version of the firmware is needed.
 
@@ -51,6 +51,53 @@ For testing a takeoff &amp; hover use the following (also in testScripts)
 python3 flightTimeTest.py
 ```
 <i>flightTimeTest.py</i> may be used as a base for other flight tests as it has all the basic framework for starting off.
+
+```
+Note that the CF address is hardcoded within the python scripts and may require modification
+```
+
+# SLAM Integration #
+
+The SLAM integration requires the installation of a camera on the airship along with a reciever connected to the PC.
+The Software requires a ROS enviroment and a catkin workspace. To set these up, follow instruction <a href="http://wiki.ros.org/melodic/Installation">here</a> and <a href="http://wiki.ros.org/catkin/Tutorials/create_a_workspace">here</a>.
+
+## Installation ##
+
+### Cloning Required Repos ###
+The following ros packages are required for the demo:
+- usb_cam : used for streaming images from the reciever to a ROS topic. can be found <a href="https://github.com/ros-drivers/usb\_cam">here</a>.
+- crazyflie_ros: used for communication with the crazyfile. can 
+
+Please clone them into your catkin workspace (under src)
+
+
+### Building workspace ###
+Finish-off by building your catkin workspace using (from within the workspace top-level):
+```
+catkin_make
+```
+Overlay the workspace using:
+```
+source Devel/setup.sh
+```
+We are now ready to start up all the ROS nodes and ROS core.
+
+## Usage ##
+
+The demonstration script shows a Takeoff and calibration sequence (more info on the calibration can be found in the final project paper).
+
+Start by building your catkin workspace using (from within the workspace top-level):
+```
+catkin_make
+```
+Overlay the workspace using:
+```
+source Devel/setup.sh
+```
+We are now ready to start up all the ROS nodes and ROS core.<br>
+
+
+
 
 
 
