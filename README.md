@@ -65,7 +65,7 @@ The Software requires a ROS enviroment and a catkin workspace. To set these up, 
 
 ### Cloning Required Repos ###
 The following ros packages are required for the demo:
-- usb_cam : used for streaming images from the reciever to a ROS topic. can be found <a href="https://github.com/ros-drivers/usb\_cam">here</a>.
+- usb_cam : used for streaming images from the reciever to a ROS topic. can be found <a href="https://github.com/ros-drivers/usb_cam">here</a>.
 - crazyflie_ros: used for communication with the crazyfile. can 
 
 Please clone them into your catkin workspace (under src)
