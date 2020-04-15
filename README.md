@@ -4,7 +4,7 @@ Crazyflie modification to airship using balloon. Mainly Instructions on Installa
 # Mechanics and Electronics #
 
 Design files for both ECAD &amp; MCAD can be found on this <a href="https://github.com/tau-adl/crazybal-design-files"> repository </a>.
-Assembly and more can be found in the final project paper in this repo
+Assembly and more can be found in the <a href="">final project paper</a> paper in this repo
 
 # Crazyfile Firmware #
 
@@ -15,7 +15,7 @@ In order to fly the airship, a modified version of the firmware is needed.
 The modified firmware, along with enviroment setup can be found on this <a href="https://github.com/tau-adl/crazyfile-firmware.git"> repository </a>.</br>
 For some python utility scripts (and for cfclient) it is required to install <a href="https://github.com/bitcraze/crazyflie-lib-python">cflib</a>. Installation Instructions can be found on the repo README.
 
-### Compilation ###
+### Compilation & Flashing ###
 
 Checkout the <b>Flight-tests</b> branch. and complie using: 
 
@@ -64,11 +64,11 @@ The Software requires a ROS enviroment and a catkin workspace. To set these up, 
 ## Installation ##
 
 ### Cloning Required Repos ###
-The following ros packages are required for the demo:
+The following ros packages are required in the <u>same workspace</u> for the demo:
 - <b>usb_cam</b> : used for streaming images from the reciever to a ROS topic. Can be found <a href="https://github.com/ros-drivers/usb_cam">here</a>.
 - <b>crazyflie_ros</b>: used for communication with the crazyfile. Can be found <a href="https://github.com/tau-adl/crazyflie_ros">here</a>.
 - <b>orb_slam_2_ros</b>: implementation of the ORB SLAM 2 algorithm and linked to a ROS enviroments. Can be found  <a href="https://github.com/tau-adl/orb_slam_2_ros">here</a>.
-Please clone them into your catkin workspace (under <i>src</i>)
+Please clone them into your catkin workspace (under <i>/src</i>)
 
 
 ### Building workspace ###
@@ -84,7 +84,7 @@ We are now ready to start up all the ROS nodes and ROS core.
 
 ## Usage ##
 
-The demonstration script shows a Takeoff and calibration sequence (more info on the calibration can be found in the final project paper).
+The demonstration script shows a Takeoff and calibration sequence (more info on the calibration and TF can be found in the <a href="">final project paper</a>).
 
 In seperate shells start the following:
 
@@ -97,7 +97,7 @@ The script automatically uses:
 ```
 roslaunch orb_slam2_ros orb_slam2_crazybal_mono.launch
 ```
-The launch file uses the config file (contains camera calibration that might need to be adjusted) found in - <i> orb_slam2/config/crazybal_camera.yaml</i> in the ORB_SLAM_2 ROS package repo.
+The launch file uses the config file (contains camera calibration that might need to be adjusted) found in<br> - <i> orb_slam2/config/crazybal_camera.yaml</i> in the ORB_SLAM_2 ROS package repo.
 
 
 
