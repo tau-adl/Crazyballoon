@@ -12,7 +12,22 @@ In order to fly the airship, a modified version of the firmware is needed.
 
 ## Instructions ##
 
-The modified firmware, along with enviroment setup can be found on this <a href=""> repository </a>.
+The modified firmware, along with enviroment setup can be found on this <a href=""> repository </a>.</br>
 
 
+### Compilation ###
 
+Checkout the <b>Flight-tests</b> branch. and complie using: 
+
+'''
+Make clean
+Make all PLATFORM=cf2b
+'''
+
+To flash the cf using the radio:
+
+''' 
+Make cload
+'''
+
+### setting parameters ###
