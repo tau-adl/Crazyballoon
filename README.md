@@ -19,15 +19,15 @@ The modified firmware, along with enviroment setup can be found on this <a href=
 
 Checkout the <b>Flight-tests</b> branch. and complie using: 
 
-'''
+```
 Make clean
 Make all PLATFORM=cf2b
-'''
+```
 
 To flash the cf using the radio:
 
-''' 
+``` 
 Make cload
-'''
+```
 
 ### setting parameters ###
