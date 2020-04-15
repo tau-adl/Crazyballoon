@@ -65,10 +65,10 @@ The Software requires a ROS enviroment and a catkin workspace. To set these up, 
 
 ### Cloning Required Repos ###
 The following ros packages are required for the demo:
-- usb_cam : used for streaming images from the reciever to a ROS topic. can be found <a href="https://github.com/ros-drivers/usb_cam">here</a>.
-- crazyflie_ros: used for communication with the crazyfile. can 
-
-Please clone them into your catkin workspace (under src)
+- <b>usb_cam</b> : used for streaming images from the reciever to a ROS topic. Can be found <a href="https://github.com/ros-drivers/usb_cam">here</a>.
+- <b>crazyflie_ros</b>: used for communication with the crazyfile. Can be found <a href="https://github.com/tau-adl/crazyflie_ros">here</a>.
+- <b>orb_slam_2_ros</b>: implementation of the ORB SLAM 2 algorithm and linked to a ROS enviroments. Can be found  <a href="https://github.com/tau-adl/orb_slam_2_ros">here</a>.
+Please clone them into your catkin workspace (under <i>src</i>)
 
 
 ### Building workspace ###
@@ -86,17 +86,18 @@ We are now ready to start up all the ROS nodes and ROS core.
 
 The demonstration script shows a Takeoff and calibration sequence (more info on the calibration can be found in the final project paper).
 
-Start by building your catkin workspace using (from within the workspace top-level):
-```
-catkin_make
-```
-Overlay the workspace using:
-```
-source Devel/setup.sh
-```
-We are now ready to start up all the ROS nodes and ROS core.<br>
+In seperate shells start the following:
 
+- Start by starting ROSCORE: ``` roscore ```
+- Launch the usb_cam node: ```  roslaunch usb_cam usb_cam-test.launch ``` 
+- Start the demo using: ``` roslaunch crazyflie_demo crazy_bal_demo.launch ```
 
+The demo script will start the orb_slam_2 node once in the air using a launch file in the orb_slam_2_ros package.
+The script automatically uses:
+```
+roslaunch orb_slam2_ros orb_slam2_crazybal_mono.launch
+```
+The launch file uses the config file (contains camera calibration that might need to be adjusted) found in - <i> orb_slam2/config/crazybal_camera.yaml</i> in the ORB_SLAM_2 ROS package repo.
 
 
 
