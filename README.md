@@ -67,7 +67,7 @@ The Software requires a ROS enviroment and a catkin workspace. To set these up, 
 The following ros packages are required in the <u>same workspace</u> for the demo:
 - <b>usb_cam</b> : used for streaming images from the reciever to a ROS topic. Can be found <a href="https://github.com/ros-drivers/usb_cam">here</a>.
 - <b>crazyflie_ros</b>: used for communication with the crazyfile. Can be found <a href="https://github.com/tau-adl/crazyflie_ros">here</a>.
-- <b>orb_slam_2_ros</b>: implementation of the ORB SLAM 2 algorithm and linked to a ROS enviroments. Can be found  <a href="https://github.com/tau-adl/orb_slam_2_ros">here</a>.
+- <b>orb_slam_2_ros</b>: implementation of the ORB SLAM 2 algorithm and linked to a ROS enviroments. Can be found  <a href="https://github.com/tau-adl/orb_slam_2_ros">here</a>.<br>
 Please clone them into your catkin workspace (under <i>/src</i>)
 
 
