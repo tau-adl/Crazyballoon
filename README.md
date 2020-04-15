@@ -4,7 +4,7 @@ Crazyflie modification to airship using balloon. Mainly Instructions on Installa
 # Mechanics and Electronics #
 
 Design files for both ECAD &amp; MCAD can be found on this <a href="https://github.com/tau-adl/crazybal-design-files"> repository </a>.
-Assembly and more can be found in the <a href="">final project paper</a> paper in this repo
+Assembly and more can be found in the <a href="https://github.com/tau-adl/Crazyballoon/blob/master/Final%20Project%20Documentation%20-%20Erez%20Gotlieb.pdf">final project paper</a> paper in this repo
 
 # Crazyfile Firmware #
 
@@ -84,7 +84,7 @@ We are now ready to start up all the ROS nodes and ROS core.
 
 ## Usage ##
 
-The demonstration script shows a Takeoff and calibration sequence (more info on the calibration and TF can be found in the <a href="">final project paper</a>).
+The demonstration script shows a Takeoff and calibration sequence (more info on the calibration and TF can be found in the <a href="https://github.com/tau-adl/Crazyballoon/blob/master/Final%20Project%20Documentation%20-%20Erez%20Gotlieb.pdf">final project paper</a>).
 
 In seperate shells start the following:
 
