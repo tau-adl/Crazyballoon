@@ -23,6 +23,12 @@ Checkout the <b>Flight-tests</b> branch. and complie using:
 Make clean
 Make all PLATFORM=cf2b
 ```
+Start & update git-submodules:
+
+```
+git submodule init
+git submodule update
+``` 
 
 To flash the cf using the radio:
 
