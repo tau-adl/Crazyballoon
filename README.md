@@ -17,18 +17,19 @@ For some python utility scripts (and for cfclient) it is required to install <a 
 
 ### Compilation & Flashing ###
 
-Checkout the <b>Flight-tests</b> branch. and complie using: 
-
-```
-Make clean
-Make all PLATFORM=cf2b
-```
 Start & update git-submodules:
 
 ```
 git submodule init
 git submodule update
 ``` 
+Checkout the <b>Flight-tests</b> branch. and complie using: 
+
+```
+Make clean
+Make all PLATFORM=cf2b
+```
+
 
 To flash the cf using the radio:
 
