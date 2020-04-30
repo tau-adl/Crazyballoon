@@ -79,6 +79,11 @@ The following ros packages are required in the <u>same workspace</u> for the dem
 Please clone them into your catkin workspace (under <i>/src</i>) and init+update any required git submodules.
 Install any dependencies required listed in the respective repo's READMEs'.
 
+### python dependencies ###
+
+install the following dependencies using pip:
+- scipy
+-
 
 ### Building workspace ###
 Finish-off by building your catkin workspace using (from within the workspace top-level):
