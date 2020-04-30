@@ -26,15 +26,15 @@ git submodule update
 Checkout the <b>Flight-tests</b> branch. and complie using: 
 
 ```
-Make clean
-Make all PLATFORM=cf2b
+make clean
+make all PLATFORM=cf2b
 ```
 
 
 To flash the cf using the radio:
 
 ``` 
-Make cload
+make cload
 ```
 
 ### Setting Parameters ###
