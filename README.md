@@ -100,6 +100,12 @@ We are now ready to start up all the ROS nodes and ROS core.
 
 The demonstration script shows a Takeoff and calibration sequence (more info on the calibration and TF can be found in the <a href="https://github.com/tau-adl/Crazyballoon/blob/master/Final%20Project%20Documentation%20-%20Erez%20Gotlieb.pdf">final project paper</a>).
 
+### update usb_cam launch file 
+```
+TODO
+```
+
+
 In seperate shells start the following:
 
 - Start by starting ROSCORE: ``` roscore ```
