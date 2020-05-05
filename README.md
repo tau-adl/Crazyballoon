@@ -13,7 +13,7 @@ In order to fly the airship, a modified version of the firmware is needed.
 ## Instructions ##
 
 The modified firmware, along with enviroment setup can be found on this <a href="https://github.com/tau-adl/crazyfile-firmware.git"> repository </a>.</br>
-For some python utility scripts (and for cfclient) it is required to install <a href="https://github.com/bitcraze/crazyflie-clients-python">cfclient</a>/<a href="https://github.com/bitcraze/crazyflie-lib-python">cflib</a>. Installation Instructions can be found on the repo README.
+For some python utility scripts (and for cfclient) it is required to install <a href="https://github.com/bitcraze/crazyflie-clients-python">cfclient</a>/<a href="https://github.com/bitcraze/crazyflie-lib-python">cflib</a>. Installation Instructions can be found on the repo README.(preferably should go with pip3 installation - use version 2019.9.1 and 0.1.8 respectively)
 
 ### Compilation & Flashing ###
 
